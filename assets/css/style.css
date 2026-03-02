@@ -1,0 +1,85 @@
+/* Ajustes generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em 5em;
+}
+
+header h1 {
+    padding: 1em 0em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1em 0em;
+}
+
+/* Contenedores & elementos */
+
+.tarea-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.tarea-container input {
+    width: 100%;
+    padding: 5px;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.tarea-container button {
+    padding: 5px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tarea-container button:hover {
+    background-color: rgb(14, 193, 14);
+}
+
+.data-container {
+    display: flex;
+    justify-content: start;
+    gap: 10em;
+    padding: 2em 0em;
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+.tareas {
+    width: 70%;
+}
+
+/* Tabla */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: solid 1px rgb(189, 189, 189);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
