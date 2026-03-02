@@ -28,8 +28,8 @@ function renderTarea() {
 btnAgregar.addEventListener("click", () => {
     
     /* Agregar tareas al arreglo */
-    const nuevaTarea = input.value 
-    tareas.push({id: String(Date.now()).slice(-4), tarea: nuevaTarea})
+    const nuevaTarea = {id: String(Date.now()).slice(-4), tarea: input.value} 
+    tareas.push(nuevaTarea)
     input.value = ""
     
     /* Actualizamos la info del HTML */
@@ -38,7 +38,7 @@ btnAgregar.addEventListener("click", () => {
 
 /* Funcion para eliminar tareas */
 function borrar(id) {
-    const index = tareas.findIndex((ele) => ele.id === id)
+    const index = tareas.findIndex((ele) => ele.id == id)
     tareas.splice(index, 1)
-    renderTarea();
-}
+    renderTarea()
+};
