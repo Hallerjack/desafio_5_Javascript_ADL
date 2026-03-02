@@ -96,3 +96,16 @@ th, td {
 .btn-eliminar:hover {
     background-color: rgb(210, 66, 66);
 }
+
+.btn-cambiar {
+    padding: 5px 20px;
+    background-color: rgb(71, 127, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-cambiar:hover {
+    background-color: rgb(33, 80, 175);
+}
